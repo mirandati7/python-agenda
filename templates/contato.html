@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body >
+    <div class="contato-container">
+        <form method="POST" action="/">
+            <h1>Agenda de Contatos</h1>
+           
+            <div class="container">
+                <div class="container1">
+
+                </div>
+                <div>
+                    <strong><label>Nome Completo:</label></strong><br><br>
+                    <input type="text" name="nome" placeholder="Insira seu Nome completo:" required>
+                <br>
+                <br>
+                    <strong><label> Email:</label></strong><br><br>
+                    <input type="email" name="email" placeholder="Insira seu email:" required><br><br>
+            
+                    <strong><label>Telefone:</label></strong><br><br>
+                    <input type="number" name="telefone" value="Telefone" placeholder="Insira seu telefone:" required><br><br>
+            
+                    <strong><label>Data de Nascimento:</label></strong><br><br>
+                    <input type="date" 
+                           name="data_nascimento" value="Data de Nascimento" 
+                           placeholder="Insira sua Data de nascimento:" required><br><br></div> 
+        
+                    <div><h1 class="h1">Faça seu registro:</h1></div>  
+                    <div><input type="submit" value="Registrar" class="btn-submit"></div>         
+            </div>
+                <!--<img class="imagem-2"    src="{{ url_for('static', filename='img/img-lado.jpg') }}"/>  -->
+        </form>
+    </div>
+</body>
+</html>
